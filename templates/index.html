@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>UNIC ELEVATORS</title>
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+<link rel="stylesheet" href="/static/css/fontawesome.min.css">
+<link rel="shortcut icon" href="/static/images/logo.jpg">
+<script src="/static/js/jquery1-11-1.js"></script>
+<script src="/static/js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+		if(window.location.search.indexOf("submit=true") > -1)
+			alert("We have received your request and will return back to you shortly");
+		$("#myCarousel").carousel();
+		$("#myCarousel2").carousel();
+		$('#fixedTop').hide();
+		var height = $('.first_section').height();
+		console.log(height);
+		$(window).scroll(function(){
+			console.log($(this).scrollTop());
+			if($(this).scrollTop() >= height){
+			$('#fixedTop').show("slow",function(){
+				});
+			}
+			else{
+			$('#fixedTop').hide("slow",function(){
+				});
+			}
+
+			});
+		$('a[href^="#"]').on('click',function(e){
+			e.preventDefault();
+			var target=this.hash,
+			$target=$(target),x=150;
+			$('html,body').animate({
+				'scrollTop': $target.offset().top
+
+
+
+				},1000,'swing',function(){
+
+				//                   window.location.hash = target;
+
+				});
+
+			});
+
+});
+</script>
+</head>
+<body>
+<div id="fixedTop">
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#main">UNIC ELEVATORS</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#enquiry">Enquiry</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+</div>
+<div class="first_section" id="main">
+	<img src="/static/images/main_logo.png" class="main_logo">
+	<ul class="nav nav-pills home_nav">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About Us</a></li>
+		<li><a href="#products">Products</a></li>
+		<li><a href="#enquiry">Enquiry</a></li>
+		<li><a href="#contact">Contact Us</a></li>
+	</ul>
+</div>
+<div id="home">
+	<div class="row">
+		<div class="col-md-5" >
+			<div id="myCarousel2" class="carousel slide home_img" data-ride="carousel" data-interval=3000 >
+
+				<!-- Carousel indicators -->
+
+				<ol class="carousel-indicators">
+
+					<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+
+					<li data-target="#myCarousel2" data-slide-to="1"></li>
+
+					<li data-target="#myCarousel2" data-slide-to="2"></li>
+					<li data-target="#myCarousel2" data-slide-to="3"></li>
+
+				</ol>   
+
+				<!-- Carousel items -->
+
+				<div class="carousel-inner">
+
+					<div class="item active">
+						<img src="/static/images/carousel21.jpg">
+
+
+
+					</div>
+
+					<div class="item">
+
+						<img src="/static/images/carousel22.jpg">
+
+
+					</div>
+
+					<div class="item">
+						<img src="/static/images/elevator.jpg">
+					</div>
+					<div class="item">
+						<img src="/static/images/carousel4.jpg">
+					</div>
+
+				</div>
+
+				<!-- Carousel nav -->
+
+
+			</div>
+		</div>
+		<div class="col-md-4" align="justify" style="padding-left:5%;">
+			<h1 style="color:#000;">Vision</h1><br>
+			U - Unyielding in service<br><br>
+			N - New technologies for efficient performance<br><br>
+			I - Innovative and integrated service providers<br><br>
+			C - Customer relationship and satisfaction<br><br>
+		</div>
+		<div class="col-md-2">
+			<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Funicelevators&amp;width=250px&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=false&amp;appId=335042280003362" scrolling="no" frameborder="0" style="border:none; overflow:auto; width:120%; height:450px;" allowTransparency="false"></iframe>
+		</div>
+	</div>
+</div>
+<div id="about">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-3">
+			<img src="/static/images/logo.jpg" class="about_img">
+		</div>
+		<div class="col-md-7" align="justify">
+			<h1 style="color:rgba(0,0,0,0.5)">About Us</h1>
+			The Elevator Company provides lift  maintenance, repair, modernisation and installation expertise. The Elevator Company maintains a large portfolio of lift equipment. In addition to serving our own client base, we provide nationwide troubleshooting services.<br><br>
+
+			The Elevator Company can undertake maintenance on all makes and types of lifts, its in-depth knowledge of the industry allows efficient sourcing of spares, early diagnosis of faults and the implementation of the necessary remedial actions with a minimum of fuss, disruption to normal service, inconvenience and cost.<br><br>
+
+			The Elevator Company employs highly skilled and motivated "senior technician" field personnel to troubleshoot problem lifts and escalators. Aided by an extensive technical database, we provide this expertise to lift companies, management companies and individual lift owners nationwide.<br><br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			</div>
+	</div>
+</div>
+<div id="products">
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#one" data-toggle="tab">Installation</a></li>
+				<li><a href="#two" data-toggle="tab">Modernization</a></li>
+				<li><a href="#three" data-toggle="tab">Maintanence</a></li>
+				<li><a href="#four" data-toggle="tab">Annual Contract</a></li>
+				
+			</ul>
+		</div>
+		<div class="col-md-8">
+			<div class="tab-content">
+				<div id="one" class="tab-pane active">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+							<img src="/static/images/installation.jpg" height=50% width=75%>
+							</div>
+						<div class="col-md-7" align="justify">
+							<strong>Unic Elevators</strong> possesses specialization in the successfully carrying out the installation of new Elevators. We offer both Passenger and Freight Elevator installation services, Dumbwaiters, Escalators, and Residential Equipment in new and existing buildings at very cost-effective prices. Our team of technocrats installs Home and Commercial Elevators as per clients’ needs and specifications. Our Passenger Elevators are suitable for installation in airports, railway stations, stadiums, shopping malls, and over bridges.
+						</div>
+					</div>
+				</div>
+				<div id="two" class="tab-pane">
+					<div class="row">
+						<div class="col-md-5">
+							<img src="/static/images/modernization.jpg" height=70% width=100%>
+						</div>
+						<div class="col-md-7" align="justify">
+							Our team of engineers and technicians has immense experience in redesigning and modernizing any type of existing Commercial Elevator. Our team of experts gives keen look at every peculiarity of the existing Elevator like its’ present condition, design, lost parts, if any, wear and tear, and any other technical fault which needs to be replaced or upgraded. We have a capable and dedicated maintenance division which is comprised of experienced and well trained engineers and technicians taking care of your existing Elevator and also own expertise in Customized Elevator Modernization.We offer Elevator Modernization service at market competitive price maintaining all necessary international safety standards. Our Elevator Modernization service has following features:<br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-9">
+						<ul>
+							<li>Attractive Fixtures in places of old fixtures for hall & landing</li>
+							<li>Controlled & Machine Drive Upgradation for minimizing power consumption</li>
+							<li>Creative Cabin Enhancement for sophisticated look</li>
+							<li>Door & Fire Protection Technology</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<div id="three" class="tab-pane">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-4">
+							<img src="/static/images/maintenance.jpg" height=75% width=100%>
+						</div>
+						<div class="col-md-7" align="justify">
+							Safe service & maintenance play significant role in increasing life of an Elevator as Elevator is an output of Electronic, Electrical & Mechanical Technologies. We at, Everest Elevators help our clients in maintaining the quality and efficiency of Elevators. We are one the most respected and dependable Elevator Maintenance service providers in Bangalore. Our comprehensive Elevator Maintenance service program helps to keep Elevator in minimum down-time at reasonable cost. Our efficient team of technicians uses computerized monitoring system for better operational efficiency, ensuring best quality service to our clients. Some of the features of our elevator maintenance services are listed below:
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">
+						</div>
+						<div class="col-md-10">
+							<ul>
+								<li>Computerized monitoring system for better and quick results</li>
+								<li>Installation Engineers and Maintenance Specialists for new generation elevators</li>
+								<li>Comprehensive Maintenance Contract to ensure safe & smooth operations with less operating expenses</li>
+								<li>On-Site Diagnostic Arrangement helps Kinetic Engineer to keep Elevator in Minimum Down-Time</li>
+								<li>Advance Remote Monitoring and Group Supervisory Control for Elevators</li>
+								<li>Assurance of availability of complete genuine parts</li>
+								<li>Flexible Monthly or Yearly Maintenance Scheduling</li>
+								<li>Maintain National & International safety standard</li>
+								<li>Round the clock maintenance</li>
+
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="four" class="tab-pane">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-5">
+							<img src="/static/images/annual.jpg" height=75% width=100%>
+						</div>
+						<div class="col-md-6" align="justify">
+							Our company offers Annual Maintenance Contract (AMC) for all types of Elevators. Backed by the team of very efficient and experienced service engineers, we offer best maintenance services like AMC of Elevators. We are one of the few elevator maintenance contractors in Bangalore. We offer maintenance and repairing services to all types of Elevators at lesser prices compare to our competitors.<br><br>
+							<strong>CATEGORIES ARE:</strong><br>
+							<ol>
+								<li>Non Comprehensive</li>
+								<li>Comprehensive<br>
+									<ol>
+										<li>Diamond</li>
+										<li>Gold</li>
+										<li>Silver</li>
+									</ol>
+								</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="enquiry" class="enquiry_form">
+		<strong>
+		<form action="/enquire" method="post" class="enquiy_form">
+			{% csrf_token %}
+			Name*<br>
+			<input type="text" name="name" required><br><br>
+			Email*<br>
+			<input type="email" name="email" required><br><br>
+			Subject*<br>
+			<input type="text" name="subject" required> <br><br>
+			Description<br>
+			<textarea class="enquiry_text" placeholder="Please Leave a short description of what your needs are!!!" name="desc" required></textarea><br><br>
+			<button class="btn btn-primary sub_button">Submit</button>
+		</form>
+		</strong>
+</div>
+<div id="contact">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-6">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.2021835218866!2d77.65800680000001!3d13.022793100000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10d3c0889b1b%3A0x9758890db6045a33!2s176%2C+Horamavu+Main+Rd%2C+Munireddy+Layout%2C+Hormavu%2C+Bengaluru%2C+Karnataka+560043!5e0!3m2!1sen!2sin!4v1414934962883" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="col-md-4" style="margin-top:12%;">
+			Contact us at: <i class="fa fa-phone"></i> <strong>8904709705</strong><br><br>
+			Mail us at: <i class="fa fa-envelope"></i> <strong>info@unicelevators.com</strong>
+		</div>
+	</div>
+</div>
+	</body> 
+	</html>
