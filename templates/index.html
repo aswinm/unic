@@ -7,6 +7,16 @@
 <script src="/static/js/jquery1-11-1.js"></script>
 <script src="/static/js/bootstrap.js"></script>
 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56576200-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
 $(document).ready(function(){
 		if(window.location.search.indexOf("submit=true") > -1)
 			alert("We have received your request and will return back to you shortly");
@@ -79,6 +89,7 @@ $(document).ready(function(){
 </div>
 <div class="first_section" id="main">
 	<img src="/static/images/main_logo.png" class="main_logo">
+	<strong>
 	<ul class="nav nav-pills home_nav">
 		<li><a href="#home">Home</a></li>
 		<li><a href="#about">About Us</a></li>
@@ -86,6 +97,7 @@ $(document).ready(function(){
 		<li><a href="#enquiry">Enquiry</a></li>
 		<li><a href="#contact">Contact Us</a></li>
 	</ul>
+	</strong>
 </div>
 <div id="home">
 	<div class="row">
@@ -186,10 +198,10 @@ $(document).ready(function(){
 				<div id="one" class="tab-pane active">
 					<div class="row">
 						<div class="col-md-1"></div>
-						<div class="col-md-3">
-							<img src="/static/images/installation.jpg" height=50% width=75%>
+						<div class="col-md-4">
+							<img src="/static/images/installation.jpg" height=80% width=95%>
 							</div>
-						<div class="col-md-7" align="justify">
+						<div class="col-md-6" align="justify">
 							<strong>Unic Elevators</strong> possesses specialization in the successfully carrying out the installation of new Elevators. We offer both Passenger and Freight Elevator installation services, Dumbwaiters, Escalators, and Residential Equipment in new and existing buildings at very cost-effective prices. Our team of technocrats installs Home and Commercial Elevators as per clients’ needs and specifications. Our Passenger Elevators are suitable for installation in airports, railway stations, stadiums, shopping malls, and over bridges.
 						</div>
 					</div>
@@ -294,8 +306,8 @@ $(document).ready(function(){
 		<div class="col-md-6">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.2021835218866!2d77.65800680000001!3d13.022793100000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10d3c0889b1b%3A0x9758890db6045a33!2s176%2C+Horamavu+Main+Rd%2C+Munireddy+Layout%2C+Hormavu%2C+Bengaluru%2C+Karnataka+560043!5e0!3m2!1sen!2sin!4v1414934962883" width="600" height="450" frameborder="0" style="border:0"></iframe>
 		</div>
-		<div class="col-md-4" style="margin-top:12%;">
-			Contact us at: <i class="fa fa-phone"></i> <strong>8904709705</strong><br><br>
+		<div class="col-md-4" style="margin-top:11%;">
+			Contact us at: <br><i class="fa fa-phone"></i> <strong> +91 8904709705<br><i class="fa fa-phone"></i> +91 7795822003<br><br></strong>
 			Mail us at: <i class="fa fa-envelope"></i> <strong>info@unicelevators.com</strong>
 		</div>
 	</div>

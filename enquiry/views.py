@@ -38,5 +38,7 @@ def logon(request):
     else:
         return render(request,"login.html")
 
+def verify(request):	
+    return render(request,'verifyforzoho.html')
 
 #Create your views here.

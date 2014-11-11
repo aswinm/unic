@@ -6207,16 +6207,18 @@ button.close {
 .first_section{
 	height:100%;
 	width:100%;
-	background-image: url('../images/fbg.jpg');
+/*background:#1aa9eb;*/
+background:#585c55;
+	background-image: url('../images/firbg.png');
 	
 	color:white;
 
 }
 .main_logo{
-	margin-top:9%;
-	margin-left:26%;
-	height:35%;
-	width:50%;
+	margin-top:5%;
+	margin-left:17%;
+	height:45%;
+	width:70%;
 }
 
 .home_nav{
@@ -6225,7 +6227,7 @@ button.close {
 }
 
 .home_nav > li > a{
-	color:#0f0;
+	color:#77bb40;
 	font-size:1.5em;
 	text-decoration:none;
 	height:9%;
@@ -6255,6 +6257,7 @@ button.close {
 	color:#111;
 	height:100%;
 	width:100%;
+	overflow:auto;
 	background-image: url('../images/bg.jpg');
 	padding-top:10%;
 	font-size:1.3em;
@@ -6264,6 +6267,8 @@ button.close {
 	color:#111;
 	height:100%;
 	width:100%;
+	overflow:auto;
+	overflow:auto;
 	background-image: url('../images/bg.jpg');
 	font-size:1.3em;
 	padding-top:10%;
@@ -6275,6 +6280,7 @@ button.close {
 #about{
 	height:100%;
 	width:100%;
+	overflow:auto;
 	background:#d9e4f7;
 	background-image: url('../images/hello.png');
 	padding-top:9%;
@@ -6294,7 +6300,7 @@ button.close {
 .about_img{
 	margin-top:12%;
 	height:50%;
-	width:100%;
+	width:80%;
 }
 
 #contact{
@@ -6310,6 +6316,7 @@ button.close {
 	color:#111;
 	height:100%;
 	width:100%;
+	overflow:auto;
 	background:#d9e4f7;
 	background-image: url('../images/hello.png');
 	padding-top:5%;
